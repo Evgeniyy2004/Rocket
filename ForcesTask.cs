@@ -11,7 +11,7 @@ public class ForcesTask
 	/// </summary>
 	public static RocketForce GetThrustForce(double forceValue)
 	{
-		return x=>new Vector(x.Velocity.X/Math.Abs(x.Velocity.X), x.Velocity.Y / Math.Abs(x.Velocity.Y))
+		return x=>new Vector(x.Velocity.X/Math.Abs(x.Velocity.X), x.Velocity.Y / Math.Abs(x.Velocity.Y))*Math.Sqrt(forceValue);
     }
 
 	/// <summary>
